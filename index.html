@@ -1,119 +1,132 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - Abqario App</title>
+    <title>سياسة الخصوصية - تطبيق عبقريّو</title>
+    <!-- Tailwind CSS (CDN) لمظهر عصري واحترافي -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f9f9f9;
-            margin: 0;
-            padding: 0;
+            font-family: 'Tajawal', sans-serif;
+            background-color: #0D0D1A;
+            color: #E2E8F0;
         }
-        .container {
-            max-width: 800px;
-            margin: 40px auto;
-            background: #fff;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-        h1 {
-            color: #2c3e50;
-            text-align: center;
-            border-bottom: 2px solid #3498db;
-            padding-bottom: 10px;
-        }
-        h2 {
-            color: #2980b9;
-            margin-top: 30px;
-        }
-        p {
-            margin-bottom: 15px;
-        }
-        ul {
-            margin-bottom: 20px;
-        }
-        li {
-            margin-bottom: 10px;
-        }
-        a {
-            color: #3498db;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .footer {
-            margin-top: 40px;
-            text-align: center;
-            font-size: 0.9em;
-            color: #7f8c8d;
-            border-top: 1px solid #eee;
-            padding-top: 20px;
+        h1, h2 {
+            color: #ffffff;
         }
     </style>
 </head>
-<body>
+<body class="antialiased font-sans leading-relaxed text-gray-300">
+    <div class="max-w-4xl mx-auto px-6 py-12">
+        <div class="bg-[#13132A] rounded-3xl p-8 md:p-12 shadow-2xl border border-gray-800">
+            <div class="text-center mb-12 border-b border-gray-800 pb-8">
+                <h1 class="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-purple-500 mb-4">
+                    سياسة الخصوصية
+                </h1>
+                <p class="text-lg text-gray-400">تطبيق "عبقريّو" (Abqario)</p>
+                <p class="text-sm text-gray-500 mt-2">تاريخ آخر تحديث: {{ date('Y-m-d') }}</p>
+            </div>
 
-    <div class="container">
-        <h1>Privacy Policy for "Abqario" App</h1>
-        <p><strong>Last Updated:</strong> April 13, 2026</p>
+            <div class="space-y-8 text-base">
+                <section>
+                    <h2 class="text-2xl font-bold mb-4 flex items-center">
+                        <span class="w-8 h-8 rounded-full bg-indigo-500/20 text-indigo-400 flex items-center justify-center ml-3 text-sm">1</span>
+                        مقدمة
+                    </h2>
+                    <p class="text-gray-400">
+                        نحن في "عبقريّو" نأخذ خصوصيتك على محمل الجد. توضح سياسة الخصوصية هذه كيف نقوم بجمع، واستخدام، وحماية معلوماتك الشخصية عند استخدامك لتطبيقنا. تم صياغة هذه السياسة لتتوافق مع متطلبات متجر <span class="text-white font-semibold">Google Play</span> والقوانين الدولية لحماية البيانات.
+                    </p>
+                </section>
 
-        <p>Welcome to the <strong>Abqario</strong> app. We highly value our users' privacy. This Privacy Policy explains how we collect, use, and protect your personal information when you use our application.</p>
+                <section>
+                    <h2 class="text-2xl font-bold mb-4 flex items-center">
+                        <span class="w-8 h-8 rounded-full bg-indigo-500/20 text-indigo-400 flex items-center justify-center ml-3 text-sm">2</span>
+                        البيانات التي نجمعها
+                    </h2>
+                    <ul class="list-disc list-inside space-y-2 text-gray-400 mr-4">
+                        <li><strong class="text-gray-200">معلومات الحساب:</strong> عند التسجيل (سواء عبر Google أو خدمات Huawei)، نجمع اسمك وبريدك الإلكتروني وصورة ملفك الشخصي لإنشاء حسابك وتخصيص تجربتك.</li>
+                        <li><strong class="text-gray-200">بيانات الاستخدام:</strong> نجمع بيانات حول تقدمك في اللعبة، النقاط التي تجمعها، وإجابات الأسئلة لتحديث قائمة المتصدرين (Leaderboard).</li>
+                        <li><strong class="text-gray-200">المعرفات التقنية:</strong> يتم جمع رموز تعريف الجهاز (مثل FCM Token) لإرسال الإشعارات التنبيهية الهامة لك وتامين حسابك.</li>
+                    </ul>
+                </section>
 
-        <h2>1. Information We Collect</h2>
-        <p>To provide the best possible experience, we collect certain essential information when you use the app:</p>
-        <ul>
-            <li><strong>Login Information:</strong> When you sign in using your Google or Huawei account, we receive your publicly available basic information, such as your name, email address, and profile picture.</li>
-            <li><strong>Gameplay and Interaction Data:</strong> We store your account level, the points you earn from answering questions, and your number of correct answers to display them within the app and update the "Leaderboard" section.</li>
-            <li><strong>Device Identifiers:</strong> We may collect technical data such as device type and operating system to ensure the app functions efficiently and to send Push Notifications.</li>
-        </ul>
+                <section>
+                    <h2 class="text-2xl font-bold mb-4 flex items-center">
+                        <span class="w-8 h-8 rounded-full bg-indigo-500/20 text-indigo-400 flex items-center justify-center ml-3 text-sm">3</span>
+                        كيف نستخدم بياناتك؟
+                    </h2>
+                    <p class="text-gray-400 mb-2">نستخدم المعلومات التي نجمعها للأغراض التالية:</p>
+                    <ul class="list-disc list-inside space-y-2 text-gray-400 mr-4">
+                        <li>توفير وصيانة وتحسين تجربة الألعاب داخل التطبيق.</li>
+                        <li>عرض ترتيبك مقارنة باللاعبين الآخرين في قائمة المتصدرين.</li>
+                        <li>إرسال تحديثات وإشعارات تتعلق بالتطبيق.</li>
+                        <li>منع الغش والأنشطة غير المصرح بها للحفاظ على بيئة لعب عادلة.</li>
+                    </ul>
+                </section>
 
-        <h2>2. How We Use Your Information</h2>
-        <p>We use the collected information for the following purposes:</p>
-        <ul>
-            <li>To create and manage your personal account within the app.</li>
-            <li>To save your game progress, level, and collected points.</li>
-            <li>To display the "Top 10 Leaderboard" inside the app.</li>
-            <li>To send important notifications and alerts regarding updates or new features.</li>
-            <li>To improve app performance and troubleshoot technical issues (via Firebase services).</li>
-        </ul>
+                <section>
+                    <h2 class="text-2xl font-bold mb-4 flex items-center">
+                        <span class="w-8 h-8 rounded-full bg-indigo-500/20 text-indigo-400 flex items-center justify-center ml-3 text-sm">4</span>
+                        مشاركة البيانات مع أطراف ثالثة
+                    </h2>
+                    <p class="text-gray-400">
+                        لا نقوم ببيع أو تأجير معلوماتك الشخصية. قد نشارك بعض البيانات التقنية بشكل آمن مع مزودي الخدمات المعتمدين والموثوقين (مثل خدمات Google و Huawei Mobile Services) لتشغيل التطبيق، المصادقة، وتحليلات الأداء بما يتوافق بدقة مع سياسات المتاجر.
+                    </p>
+                </section>
 
-        <h2>3. Third-Party Services</h2>
-        <p>The app utilizes third-party services that may collect information used to identify you. The services used in our app include:</p>
-        <ul>
-            <li><strong>Firebase:</strong> We use Firebase services (by Google) for database management (Backend), user authentication, and Cloud Messaging (notifications).</li>
-            <li><strong>Google Play Services & Huawei Mobile Services:</strong> To facilitate the sign-in process.</li>
-            <li><strong>AdMob Ads (Future Updates):</strong> In upcoming updates, we may integrate Google AdMob ads. This network will collect certain data to provide personalized advertisements.</li>
-        </ul>
+                <section>
+                    <h2 class="text-2xl font-bold mb-4 flex items-center text-red-400">
+                        <span class="w-8 h-8 rounded-full bg-red-500/20 text-red-400 flex items-center justify-center ml-3 text-sm">5</span>
+                        حقوق المستخدم (حذف الحساب والبيانات)
+                    </h2>
+                    <p class="text-gray-400 mb-4">
+                        بموجب سياسات Google Play و Huawei AppGallery للحفاظ على بيانات المستخدم والخصوصية، يحق لك التحكم الكامل في بياناتك:
+                    </p>
+                    <div class="bg-red-500/10 border border-red-500/20 rounded-xl p-5">
+                         <p class="text-gray-300">
+                            <strong>كيفية حذف بياناتك من داخل التطبيق (مباشرة):</strong>
+                        </p>
+                        <p class="mt-2 text-gray-400 mb-4">
+                            لقد وفرنا لك زراً مخصصاً باسم <strong>"حذف حسابي"</strong> متواجد أسفل قسم "حسابي" (Profile) داخل التطبيق. بمجرد الضغط عليه وتأكيد طلبك، يقوم النظام الفني لدينا فوراً بمسح حسابك وصورك ونقاطك وإزالتك من قائمة المتصدرين بشكل آلي ونهائي.
+                        </p>
+                        <hr class="border-red-500/20 my-4">
+                        <p class="text-gray-300">
+                            <strong>طلب الحذف عبر البريد (بديل):</strong>
+                        </p>
+                        <p class="mt-2 text-gray-400">
+                            كما يمكنك طلب الحذف الدائم عبر مراسلتنا على البريد الإلكتروني أدناه مع ذكر عنوان "طلب حذف بيانات"، وسيتم مسح بياناتك نهائياً من خوادمنا بشكل لا رجعة فيه.
+                        </p>
+                    </div>
+                </section>
 
-        <h2>4. Account and Data Deletion</h2>
-        <p>We give you full control over your data. You can request the permanent deletion of your account and all associated data at any time. To do this:</p>
-        <ul>
-            <li>Open the app and log in.</li>
-            <li>Navigate to the <strong>"My Profile"</strong> section.</li>
-            <li>Scroll to the bottom and tap the <strong>"Delete My Account"</strong> button.</li>
-            <li>Once confirmed, your account, name, email, profile picture, and all accumulated points will be immediately and permanently erased from our databases (Firebase).</li>
-        </ul>
+                <section>
+                    <h2 class="text-2xl font-bold mb-4 flex items-center">
+                        <span class="w-8 h-8 rounded-full bg-indigo-500/20 text-indigo-400 flex items-center justify-center ml-3 text-sm">6</span>
+                        أمان البيانات
+                    </h2>
+                    <p class="text-gray-400">
+                        نتخذ إجراءات أمنية وتشفيرية معيارية معتمدة لحماية معلوماتك من الوصول غير المصرح به أو التعديل أو الإتلاف. يتم توجيه جميع الاتصالات بين التطبيق والخادم عبر بروتوكولات آمنة (HTTPS).
+                    </p>
+                </section>
 
-        <h2>5. Data Security</h2>
-        <p>We value your trust in providing us with your Personal Information, and we strive to use commercially acceptable means of protecting it (such as Firebase security protocols). However, remember that no method of transmission over the internet, or method of electronic storage is 100% secure, and we cannot guarantee its absolute security.</p>
-
-        <h2>6. Changes to This Privacy Policy</h2>
-        <p>We may update our Privacy Policy from time to time (for example, when integrating advertisements). We will notify you of any changes by posting the new Privacy Policy on this page and, if necessary, sending an in-app notification.</p>
-
-        <h2>7. Contact Us</h2>
-        <p>If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us via our support email:</p>
-        <p><strong>Email:</strong> <a href="mailto:support.abqario@gmail.com">support.abqario@gmail.com</a></p>
-
-        <div class="footer">
-            &copy; 2026 Abqario App. All rights reserved.
+                <section class="bg-indigo-900/20 border border-indigo-500/30 rounded-2xl p-6 mt-12">
+                    <h2 class="text-xl font-bold mb-2 flex items-center text-indigo-300">
+                        <svg class="w-6 h-6 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                        اتصل بنا
+                    </h2>
+                    <p class="text-gray-300 mb-4">
+                        إذا كانت لديك أي أسئلة، أو استفسارات حول سياسة الخصوصية هذه، أو إذا كنت ترغب في إدارة بياناتك، فلا تتردد في التواصل معنا عبر البريد الإلكتروني الرسمي لخدمة العملاء والدعم:
+                    </p>
+                    <div class="inline-flex items-center space-x-2 space-x-reverse bg-[#0D0D1A] px-4 py-3 rounded-lg border border-gray-700">
+                        <a href="mailto:support.abqario@gmail.com" class="text-indigo-400 font-bold hover:text-indigo-300 transition-colors text-lg" dir="ltr">
+                            support.abqario@gmail.com
+                        </a>
+                    </div>
+                </section>
+            </div>
         </div>
     </div>
-
 </body>
 </html>
