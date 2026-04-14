@@ -1,64 +1,305 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en" id="html-root" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - Abqario | سياسة الخصوصية - عبقريّو</title>
+    <title>Privacy Policy - Abqario</title>
+    <!-- Tailwind CSS (CDN) for a modern layout -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Tajawal', 'Inter', sans-serif; background-color: #0D0D1A; color: #E2E8F0; }
-        .en-section { font-family: 'Inter', sans-serif; direction: ltr; text-align: left; }
+        body {
+            background-color: #0D0D1A;
+            color: #E2E8F0;
+        }
+        .font-en {
+            font-family: 'Inter', sans-serif;
+        }
+        .font-ar {
+            font-family: 'Tajawal', sans-serif;
+        }
+        h1, h2, h3 {
+            color: #ffffff;
+        }
     </style>
 </head>
-<body class="antialiased px-4 py-10">
-    <div class="max-w-4xl mx-auto space-y-10">
-        
+<body class="antialiased leading-relaxed text-gray-300 font-en">
+    <div class="max-w-4xl mx-auto px-6 py-12">
+
+        <!-- Language Toggle Button -->
+        <div class="flex justify-end mb-6">
+            <button id="lang-toggle" onclick="toggleLang()" class="bg-indigo-600 hover:bg-indigo-500 text-white px-5 py-2 rounded-full font-semibold transition-colors shadow-lg border border-indigo-400/30 flex items-center gap-2">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"></path></svg>
+                <span>عربي</span>
+            </button>
+        </div>
+
         <div class="bg-[#13132A] rounded-3xl p-8 md:p-12 shadow-2xl border border-gray-800">
-            <div class="text-center mb-10 border-b border-gray-800 pb-8">
-                <h1 class="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-500 mb-2">سياسة الخصوصية</h1>
-                <p class="text-gray-400">تطبيق "عبقريّو" (Abqario)</p>
-            </div>
+            
+            <!-- ========================= -->
+            <!-- ENGLISH CONTENT (DEFAULT) -->
+            <!-- ========================= -->
+            <div id="content-en" class="space-y-8 text-base">
+                <div class="text-center mb-12 border-b border-gray-800 pb-8">
+                    <h1 class="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-purple-500 mb-4">
+                        Privacy Policy
+                    </h1>
+                    <p class="text-lg text-gray-400">"Abqario" Application</p>
+                    <p class="text-sm text-gray-500 mt-2">Last Updated: <span id="date-en"></span></p>
+                </div>
 
-            <div class="space-y-6">
                 <section>
-                    <h2 class="text-xl font-bold mb-3 text-white italic">1. البيانات التي نجمعها عبر HMS و Google</h2>
-                    <p class="text-gray-400">نستخدم خدمات Huawei Mobile Services (HMS) و Google Firebase للمصادقة. نجمع (الاسم، البريد الإلكتروني، ومعرف الجهاز) لتشغيل ميزات اللعب السحابي وقوائم المتصدرين.</p>
+                    <h2 class="text-2xl font-bold mb-4 flex items-center">
+                        <span class="w-8 h-8 rounded-full bg-indigo-500/20 text-indigo-400 flex items-center justify-center mr-3 text-sm">1</span>
+                        Introduction
+                    </h2>
+                    <p class="text-gray-400">
+                        At "Abqario" (hereinafter referred to as "we", "us", or "our"), we take your privacy seriously. This Privacy Policy is designed to comprehensively inform you about how we collect, use, process, and protect your personal data when using our application. This policy strictly adheres to the requirements of the <strong>General Data Protection Regulation (GDPR)</strong>, the <strong>California Consumer Privacy Act (CCPA)</strong>, as well as the Developer Programme Policies of <strong>Google Play</strong> and <strong>Huawei AppGallery</strong>.
+                    </p>
                 </section>
 
                 <section>
-                    <h2 class="text-xl font-bold mb-3 text-red-400">2. حذف البيانات</h2>
-                    <p class="text-gray-400">يمكنك حذف حسابك وبياناتك فوراً عبر زر "حذف حسابي" في الملف الشخصي، أو مراسلتنا على البريد الموضح بالأسفل.</p>
+                    <h2 class="text-2xl font-bold mb-4 flex items-center">
+                        <span class="w-8 h-8 rounded-full bg-indigo-500/20 text-indigo-400 flex items-center justify-center mr-3 text-sm">2</span>
+                        Data We Collect
+                    </h2>
+                    <ul class="list-disc list-inside space-y-2 text-gray-400 ml-4">
+                        <li><strong class="text-gray-200">Account Information:</strong> When you register via Google Sign-In or Huawei ID, we collect basic profile details: Name, Email Address, and Profile Picture to create your account and personalize your experience.</li>
+                        <li><strong class="text-gray-200">Usage & Gameplay Data:</strong> We track your game progress, quiz answers, scores, and gems earned to maintain the global leaderboard and improve game balancing.</li>
+                        <li><strong class="text-gray-200">Technical Identifiers:</strong> We collect device-specific information (such as Firebase Cloud Messaging tokens and basic device model details) essential for securing your account and sending push notifications.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2 class="text-2xl font-bold mb-4 flex items-center">
+                        <span class="w-8 h-8 rounded-full bg-indigo-500/20 text-indigo-400 flex items-center justify-center mr-3 text-sm">3</span>
+                        How We Use Your Data
+                    </h2>
+                    <p class="text-gray-400 mb-2">Collected information is strictly used for the following operational purposes:</p>
+                    <ul class="list-disc list-inside space-y-2 text-gray-400 ml-4">
+                        <li>Providing, maintaining, and improving the app's functionality and user experience.</li>
+                        <li>Managing the competitive Leaderboard and distributing in-game rewards.</li>
+                        <li>Communicating important updates and administrative notices via Push Notifications.</li>
+                        <li>Security and fraud prevention to ensure a fair ecosystem for all players.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2 class="text-2xl font-bold mb-4 flex items-center">
+                        <span class="w-8 h-8 rounded-full bg-indigo-500/20 text-indigo-400 flex items-center justify-center mr-3 text-sm">4</span>
+                        Data Sharing & Third Parties
+                    </h2>
+                    <p class="text-gray-400">
+                        We do not sell, rent, or trade your personal data. We securely share mandatory technical data only with certified Service Providers (including Google Firebase and Huawei Mobile Services) to facilitate authentication, app hosting, analytic metrics, and cloud delivery. These partners act as data processors and are bound by strict global privacy regulations.
+                    </p>
+                </section>
+
+                <section>
+                    <h2 class="text-2xl font-bold mb-4 flex items-center text-red-400">
+                        <span class="w-8 h-8 rounded-full bg-red-500/20 text-red-400 flex items-center justify-center mr-3 text-sm">5</span>
+                        User Rights & Data Deletion
+                    </h2>
+                    <p class="text-gray-400 mb-4">
+                        Pursuant to GDPR and app store policies, you maintain full control over your personal data. You have the right to access, rectify, and permanently erase your data.
+                    </p>
+                    <div class="bg-red-500/10 border border-red-500/20 rounded-xl p-5">
+                         <p class="text-gray-300 font-bold mb-2">
+                             In-App Account Deletion (Automated):
+                         </p>
+                        <p class="text-gray-400 mb-4">
+                            We have provided a dedicated <strong>"Delete My Account"</strong> button located in the "Profile" section of the app. Upon confirmation, our system will instantly and permanently erase your profile, email, scores, photos, and remove you from the Leaderboard without any residual backups.
+                        </p>
+                        <hr class="border-red-500/20 my-4">
+                        <p class="text-gray-300 font-bold mb-2">
+                            Manual Deletion Request:
+                        </p>
+                        <p class="text-gray-400 mb-2">
+                            You may also exercise your right to be forgotten by emailing us directly using the contact details below, with the subject "Data Deletion Request". We will execute the deletion process within 7 to 14 business days.
+                        </p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 class="text-2xl font-bold mb-4 flex items-center">
+                        <span class="w-8 h-8 rounded-full bg-indigo-500/20 text-indigo-400 flex items-center justify-center mr-3 text-sm">6</span>
+                        Data Security & Hosting
+                    </h2>
+                    <p class="text-gray-400">
+                        We implement industry-standard encryption protocols (HTTPS/TLS) across all communications between the app and our servers. The app infrastructure is hosted on secure globally recognized cloud services (Firebase/GitHub environments), strictly complying with rigid data protection standards and preventing unauthorized access.
+                    </p>
+                </section>
+
+                <section class="bg-indigo-900/20 border border-indigo-500/30 rounded-2xl p-6 mt-12">
+                    <h2 class="text-xl font-bold mb-2 flex items-center text-indigo-300">
+                        <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                        Contact Us
+                    </h2>
+                    <p class="text-gray-300 mb-4">
+                        If you have inquiries regarding this Privacy Policy or wish to assert your data rights, please contact our Data Protection Officer at:
+                    </p>
+                    <div class="inline-flex items-center space-x-2 bg-[#0D0D1A] px-4 py-3 rounded-lg border border-gray-700">
+                        <a href="mailto:support.abqario@gmail.com" class="text-indigo-400 font-bold hover:text-indigo-300 transition-colors text-lg">
+                            support.abqario@gmail.com
+                        </a>
+                    </div>
                 </section>
             </div>
+
+            <!-- ========================= -->
+            <!-- ARABIC CONTENT (HIDDEN)   -->
+            <!-- ========================= -->
+            <div id="content-ar" class="hidden space-y-8 text-base font-ar" dir="rtl">
+                <div class="text-center mb-12 border-b border-gray-800 pb-8">
+                    <h1 class="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-purple-500 mb-4">
+                        سياسة الخصوصية
+                    </h1>
+                    <p class="text-lg text-gray-400">تطبيق "عبقريّو" (Abqario)</p>
+                    <p class="text-sm text-gray-500 mt-2">تاريخ آخر تحديث: <span id="date-ar"></span></p>
+                </div>
+
+                <section>
+                    <h2 class="text-2xl font-bold mb-4 flex items-center">
+                        <span class="w-8 h-8 rounded-full bg-indigo-500/20 text-indigo-400 flex items-center justify-center ml-3 text-sm">1</span>
+                        مقدمة
+                    </h2>
+                    <p class="text-gray-400">
+                        نحن في "عبقريّو" نأخذ خصوصيتك على محمل الجد. توضح سياسة الخصوصية هذه بصورة شاملة ومفصلة كيف نقوم بجمع، واستخدام، ومعالجة، وحماية بياناتك الشخصية. تمت صياغة هذه السياسة لتتوافق بشكل صارم مع قوانين حماية البيانات العامة في الاتحاد الأوروبي (GDPR)، وقوانين حماية خصوصية المستهلك (CCPA)، بالإضافة إلى الشروط الصارمة لمتجري <span class="text-white font-semibold">Google Play</span> و <span class="text-white font-semibold">Huawei AppGallery</span>.
+                    </p>
+                </section>
+
+                <section>
+                    <h2 class="text-2xl font-bold mb-4 flex items-center">
+                        <span class="w-8 h-8 rounded-full bg-indigo-500/20 text-indigo-400 flex items-center justify-center ml-3 text-sm">2</span>
+                        البيانات التي نجمعها
+                    </h2>
+                    <ul class="list-disc list-inside space-y-2 text-gray-400 mr-4">
+                        <li><strong class="text-gray-200">معلومات الحساب الأساسية:</strong> عند تسجيل الدخول عبر حسابات جوجل (Google) أو هواوي (Huawei ID)، نجمع اسمك، بريدك الإلكتروني، وصورتك الشخصية لإنشاء هويتك في التطبيق.</li>
+                        <li><strong class="text-gray-200">بيانات الاستخدام واللعب:</strong> نحتفظ بسجلات تقدمك في اللعبة، الإجابات، والنقاط (Gems) والجواهر التي تكسبها لضمان عمل نظام "لوحة الصدارة" (Leaderboard) بشكل دقيق.</li>
+                        <li><strong class="text-gray-200">المعرفات التقنية:</strong> يتم جمع رموز الجهاز الرقمية (مثل FCM Token) اللازمة تقنياً لإرسال الإشعارات وتأمين الحساب من الاختراقات.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2 class="text-2xl font-bold mb-4 flex items-center">
+                        <span class="w-8 h-8 rounded-full bg-indigo-500/20 text-indigo-400 flex items-center justify-center ml-3 text-sm">3</span>
+                        كيف نستخدم بياناتك؟
+                    </h2>
+                    <p class="text-gray-400 mb-2">تُستخدم كافة البيانات المجموعة حصراً للأغراض التشغيلية التالية:</p>
+                    <ul class="list-disc list-inside space-y-2 text-gray-400 mr-4">
+                        <li>تأمين تجربة لعب مستقرة، محسّنة، وخالية من الأخطاء.</li>
+                        <li>إدارة تصنيفات اللاعبين وعرض الإحصاءات العامة التنافسية.</li>
+                        <li>إرسال تنبيهات وتحديثات متصلة بصميم عمل التطبيق.</li>
+                        <li>مراقبة الأمان، ومكافحة الانتهاكات والغش لتوفير بيئة عادلة للجميع.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2 class="text-2xl font-bold mb-4 flex items-center">
+                        <span class="w-8 h-8 rounded-full bg-indigo-500/20 text-indigo-400 flex items-center justify-center ml-3 text-sm">4</span>
+                        مشاركة البيانات والأطراف الثالثة
+                    </h2>
+                    <p class="text-gray-400">
+                        نحن لا نبيع أو نؤجر أو نتبادل بياناتك الشخصية إطلاقاً. نقوم بتبادل الحد الأدنى الفني من البيانات فقط مع مزودي خدمات سحابية معتمدين عالمياً (مثل منصات Google Firebase و Huawei Mobile Services) بغرض استضافة التطبيق، معالجة الدخول، وجمع الإحصائيات التحليلية بشكل مطابق تماماً لأقسى معايير الخصوصية الدولية.
+                    </p>
+                </section>
+
+                <section>
+                    <h2 class="text-2xl font-bold mb-4 flex items-center text-red-400">
+                        <span class="w-8 h-8 rounded-full bg-red-500/20 text-red-400 flex items-center justify-center ml-3 text-sm">5</span>
+                        حقوق المستخدم (حجز ومسح البيانات)
+                    </h2>
+                    <p class="text-gray-400 mb-4">
+                        تطبيقاً لقواعد الـ GDPR وشروط المتاجر الرسمية، أنت تملك الحق الكامل للتحكم والإدارة والمسح النهائي لبياناتك:
+                    </p>
+                    <div class="bg-red-500/10 border border-red-500/20 rounded-xl p-5">
+                         <p class="text-gray-300 font-bold mb-2">
+                             الحذف الذاتي والمباشر من داخل التطبيق:
+                         </p>
+                        <p class="text-gray-400 mb-4">
+                            ضماناً لحقك المطلق، وفرنا زر <strong>"حذف حسابي"</strong> متواجد أسفل قسم "حسابي" (Profile). بالضغط عليه وتأكيد رغبتك، يتم برمجياً مسح سجلك الرقمي بالكامل (إيميل، صور، نقاط) وتُحذف من لوحة الصدارة بلا أي أثر أو نسخ احتياطية لاحقة.
+                        </p>
+                        <hr class="border-red-500/20 my-4">
+                        <p class="text-gray-300 font-bold mb-2">
+                            طلب حذف البيانات يدوياً (عبر البريد):
+                        </p>
+                        <p class="text-gray-400 mb-2">
+                            يمكنك أيضاً الكتابة إلينا على البريد الإلكتروني المذكور أدناه بعنوان "طلب حذف كامل بياناتي" لنمحو كل أثر يخصك من خوادمنا بشكل لا رجعة فيه خلال مدة لا تتجاوز 7 حتى 14 يوم عمل.
+                        </p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 class="text-2xl font-bold mb-4 flex items-center">
+                        <span class="w-8 h-8 rounded-full bg-indigo-500/20 text-indigo-400 flex items-center justify-center ml-3 text-sm">6</span>
+                        أمان وتخزين البيانات
+                    </h2>
+                    <p class="text-gray-400">
+                        نعتمد بروتوكولات تشفير قياسية صارمة (HTTPS/TLS) لجميع الاتصالات بين جهازك وخوادمنا. كما تُستضاف المنظومة على منصات عالية الموثوقية والأمان (مثل Firebase واستضافات GitHub)، مما يضمن عدم حدوث اختراقات أو وصول غير مصرح به للبيانات.
+                    </p>
+                </section>
+
+                <section class="bg-indigo-900/20 border border-indigo-500/30 rounded-2xl p-6 mt-12">
+                    <h2 class="text-xl font-bold mb-2 flex items-center text-indigo-300">
+                        <svg class="w-6 h-6 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                        تواصل معنا
+                    </h2>
+                    <p class="text-gray-300 mb-4">
+                        لأي استفسار أو لتقديم طلبات تتعلق بحقوق الخصوصية، يرجى التواصل مع فريق الخصوصية وتجربة المستفيد عبر:
+                    </p>
+                    <div class="inline-flex items-center space-x-2 space-x-reverse bg-[#0D0D1A] px-4 py-3 rounded-lg border border-gray-700">
+                        <a href="mailto:support.abqario@gmail.com" class="text-indigo-400 font-bold hover:text-indigo-300 transition-colors text-lg" dir="ltr">
+                            support.abqario@gmail.com
+                        </a>
+                    </div>
+                </section>
+            </div>
+
         </div>
-
-        <div class="bg-[#13132A] rounded-3xl p-8 md:p-12 shadow-2xl border border-gray-800 en-section">
-            <div class="text-center mb-10 border-b border-gray-800 pb-8">
-                <h1 class="text-3xl font-extrabold text-white mb-2 text-indigo-400">Privacy Policy</h1>
-                <p class="text-gray-400">Abqario Application</p>
-                <p class="text-xs text-gray-500 mt-2">Last updated: 2024-05-20</p>
-            </div>
-
-            <div class="space-y-6 text-gray-400">
-                <section>
-                    <h2 class="text-xl font-bold text-white mb-3">1. Information Collection</h2>
-                    <p>We use <strong>Huawei Mobile Services (HMS Core)</strong> and Google services for authentication and data storage. Collected data includes your name, email address, and profile picture to provide leaderboards and cloud progress features.</p>
-                </section>
-
-                <section>
-                    <h2 class="text-xl font-bold text-white mb-3">2. Data Deletion (User Rights)</h2>
-                    <p>In compliance with Google Play and Huawei AppGallery policies, we provide a <strong>"Delete Account"</strong> button within the app (Profile Settings). Clicking this will permanently wipe your data from our servers. You can also request deletion via email.</p>
-                </section>
-
-                <section>
-                    <h2 class="text-xl font-bold text-white mb-3">3. Contact Us</h2>
-                    <p>For any privacy concerns, contact us at:<br>
-                    <span class="text-indigo-400 font-bold">support.abqario@gmail.com</span></p>
-                </section>
-            </div>
-        </div>
-
     </div>
+
+    <!-- Script for language toggle and date generation -->
+    <script>
+        // Set today's date dynamically to make file pure static and hosting agnostic
+        const todayOptions = { year: 'numeric', month: 'long', day: 'numeric' };
+        const todayEn = new Date().toLocaleDateString('en-US', todayOptions);
+        const todayAr = new Date().toLocaleDateString('ar-EG', todayOptions);
+        document.getElementById('date-en').innerText = todayEn;
+        document.getElementById('date-ar').innerText = todayAr;
+
+        function toggleLang() {
+            const root = document.getElementById('html-root');
+            const toggleBtn = document.getElementById('lang-toggle');
+            const contentEn = document.getElementById('content-en');
+            const contentAr = document.getElementById('content-ar');
+            const body = document.body;
+
+            // Currently English, Switch to Arabic
+            if(root.lang === 'en') {
+                root.lang = 'ar';
+                root.dir = 'rtl';
+                contentEn.classList.add('hidden');
+                contentAr.classList.remove('hidden');
+                body.classList.remove('font-en');
+                // button text back to English switch
+                toggleBtn.innerHTML = `
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"></path></svg>
+                    <span>English</span>
+                `;
+            } 
+            // Currently Arabic, Switch to English
+            else {
+                root.lang = 'en';
+                root.dir = 'ltr';
+                contentAr.classList.add('hidden');
+                contentEn.classList.remove('hidden');
+                body.classList.add('font-en');
+                // button text back to Arabic switch
+                toggleBtn.innerHTML = `
+                    <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"></path></svg>
+                    <span>عربي</span>
+                `;
+            }
+        }
+    </script>
 </body>
 </html>
