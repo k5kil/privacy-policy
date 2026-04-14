@@ -3,130 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>سياسة الخصوصية - تطبيق عبقريّو</title>
-    <!-- Tailwind CSS (CDN) لمظهر عصري واحترافي -->
+    <title>Privacy Policy - Abqario | سياسة الخصوصية - عبقريّو</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: 'Tajawal', sans-serif;
-            background-color: #0D0D1A;
-            color: #E2E8F0;
-        }
-        h1, h2 {
-            color: #ffffff;
-        }
+        body { font-family: 'Tajawal', 'Inter', sans-serif; background-color: #0D0D1A; color: #E2E8F0; }
+        .en-section { font-family: 'Inter', sans-serif; direction: ltr; text-align: left; }
     </style>
 </head>
-<body class="antialiased font-sans leading-relaxed text-gray-300">
-    <div class="max-w-4xl mx-auto px-6 py-12">
+<body class="antialiased px-4 py-10">
+    <div class="max-w-4xl mx-auto space-y-10">
+        
         <div class="bg-[#13132A] rounded-3xl p-8 md:p-12 shadow-2xl border border-gray-800">
-            <div class="text-center mb-12 border-b border-gray-800 pb-8">
-                <h1 class="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-purple-500 mb-4">
-                    سياسة الخصوصية
-                </h1>
-                <p class="text-lg text-gray-400">تطبيق "عبقريّو" (Abqario)</p>
-                <p class="text-sm text-gray-500 mt-2">تاريخ آخر تحديث: {{ date('Y-m-d') }}</p>
+            <div class="text-center mb-10 border-b border-gray-800 pb-8">
+                <h1 class="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-500 mb-2">سياسة الخصوصية</h1>
+                <p class="text-gray-400">تطبيق "عبقريّو" (Abqario)</p>
             </div>
 
-            <div class="space-y-8 text-base">
+            <div class="space-y-6">
                 <section>
-                    <h2 class="text-2xl font-bold mb-4 flex items-center">
-                        <span class="w-8 h-8 rounded-full bg-indigo-500/20 text-indigo-400 flex items-center justify-center ml-3 text-sm">1</span>
-                        مقدمة
-                    </h2>
-                    <p class="text-gray-400">
-                        نحن في "عبقريّو" نأخذ خصوصيتك على محمل الجد. توضح سياسة الخصوصية هذه كيف نقوم بجمع، واستخدام، وحماية معلوماتك الشخصية عند استخدامك لتطبيقنا. تم صياغة هذه السياسة لتتوافق مع متطلبات متجر <span class="text-white font-semibold">Google Play</span> والقوانين الدولية لحماية البيانات.
-                    </p>
+                    <h2 class="text-xl font-bold mb-3 text-white italic">1. البيانات التي نجمعها عبر HMS و Google</h2>
+                    <p class="text-gray-400">نستخدم خدمات Huawei Mobile Services (HMS) و Google Firebase للمصادقة. نجمع (الاسم، البريد الإلكتروني، ومعرف الجهاز) لتشغيل ميزات اللعب السحابي وقوائم المتصدرين.</p>
                 </section>
 
                 <section>
-                    <h2 class="text-2xl font-bold mb-4 flex items-center">
-                        <span class="w-8 h-8 rounded-full bg-indigo-500/20 text-indigo-400 flex items-center justify-center ml-3 text-sm">2</span>
-                        البيانات التي نجمعها
-                    </h2>
-                    <ul class="list-disc list-inside space-y-2 text-gray-400 mr-4">
-                        <li><strong class="text-gray-200">معلومات الحساب:</strong> عند التسجيل (سواء عبر Google أو خدمات Huawei)، نجمع اسمك وبريدك الإلكتروني وصورة ملفك الشخصي لإنشاء حسابك وتخصيص تجربتك.</li>
-                        <li><strong class="text-gray-200">بيانات الاستخدام:</strong> نجمع بيانات حول تقدمك في اللعبة، النقاط التي تجمعها، وإجابات الأسئلة لتحديث قائمة المتصدرين (Leaderboard).</li>
-                        <li><strong class="text-gray-200">المعرفات التقنية:</strong> يتم جمع رموز تعريف الجهاز (مثل FCM Token) لإرسال الإشعارات التنبيهية الهامة لك وتامين حسابك.</li>
-                    </ul>
-                </section>
-
-                <section>
-                    <h2 class="text-2xl font-bold mb-4 flex items-center">
-                        <span class="w-8 h-8 rounded-full bg-indigo-500/20 text-indigo-400 flex items-center justify-center ml-3 text-sm">3</span>
-                        كيف نستخدم بياناتك؟
-                    </h2>
-                    <p class="text-gray-400 mb-2">نستخدم المعلومات التي نجمعها للأغراض التالية:</p>
-                    <ul class="list-disc list-inside space-y-2 text-gray-400 mr-4">
-                        <li>توفير وصيانة وتحسين تجربة الألعاب داخل التطبيق.</li>
-                        <li>عرض ترتيبك مقارنة باللاعبين الآخرين في قائمة المتصدرين.</li>
-                        <li>إرسال تحديثات وإشعارات تتعلق بالتطبيق.</li>
-                        <li>منع الغش والأنشطة غير المصرح بها للحفاظ على بيئة لعب عادلة.</li>
-                    </ul>
-                </section>
-
-                <section>
-                    <h2 class="text-2xl font-bold mb-4 flex items-center">
-                        <span class="w-8 h-8 rounded-full bg-indigo-500/20 text-indigo-400 flex items-center justify-center ml-3 text-sm">4</span>
-                        مشاركة البيانات مع أطراف ثالثة
-                    </h2>
-                    <p class="text-gray-400">
-                        لا نقوم ببيع أو تأجير معلوماتك الشخصية. قد نشارك بعض البيانات التقنية بشكل آمن مع مزودي الخدمات المعتمدين والموثوقين (مثل خدمات Google و Huawei Mobile Services) لتشغيل التطبيق، المصادقة، وتحليلات الأداء بما يتوافق بدقة مع سياسات المتاجر.
-                    </p>
-                </section>
-
-                <section>
-                    <h2 class="text-2xl font-bold mb-4 flex items-center text-red-400">
-                        <span class="w-8 h-8 rounded-full bg-red-500/20 text-red-400 flex items-center justify-center ml-3 text-sm">5</span>
-                        حقوق المستخدم (حذف الحساب والبيانات)
-                    </h2>
-                    <p class="text-gray-400 mb-4">
-                        بموجب سياسات Google Play و Huawei AppGallery للحفاظ على بيانات المستخدم والخصوصية، يحق لك التحكم الكامل في بياناتك:
-                    </p>
-                    <div class="bg-red-500/10 border border-red-500/20 rounded-xl p-5">
-                         <p class="text-gray-300">
-                            <strong>كيفية حذف بياناتك من داخل التطبيق (مباشرة):</strong>
-                        </p>
-                        <p class="mt-2 text-gray-400 mb-4">
-                            لقد وفرنا لك زراً مخصصاً باسم <strong>"حذف حسابي"</strong> متواجد أسفل قسم "حسابي" (Profile) داخل التطبيق. بمجرد الضغط عليه وتأكيد طلبك، يقوم النظام الفني لدينا فوراً بمسح حسابك وصورك ونقاطك وإزالتك من قائمة المتصدرين بشكل آلي ونهائي.
-                        </p>
-                        <hr class="border-red-500/20 my-4">
-                        <p class="text-gray-300">
-                            <strong>طلب الحذف عبر البريد (بديل):</strong>
-                        </p>
-                        <p class="mt-2 text-gray-400">
-                            كما يمكنك طلب الحذف الدائم عبر مراسلتنا على البريد الإلكتروني أدناه مع ذكر عنوان "طلب حذف بيانات"، وسيتم مسح بياناتك نهائياً من خوادمنا بشكل لا رجعة فيه.
-                        </p>
-                    </div>
-                </section>
-
-                <section>
-                    <h2 class="text-2xl font-bold mb-4 flex items-center">
-                        <span class="w-8 h-8 rounded-full bg-indigo-500/20 text-indigo-400 flex items-center justify-center ml-3 text-sm">6</span>
-                        أمان البيانات
-                    </h2>
-                    <p class="text-gray-400">
-                        نتخذ إجراءات أمنية وتشفيرية معيارية معتمدة لحماية معلوماتك من الوصول غير المصرح به أو التعديل أو الإتلاف. يتم توجيه جميع الاتصالات بين التطبيق والخادم عبر بروتوكولات آمنة (HTTPS).
-                    </p>
-                </section>
-
-                <section class="bg-indigo-900/20 border border-indigo-500/30 rounded-2xl p-6 mt-12">
-                    <h2 class="text-xl font-bold mb-2 flex items-center text-indigo-300">
-                        <svg class="w-6 h-6 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
-                        اتصل بنا
-                    </h2>
-                    <p class="text-gray-300 mb-4">
-                        إذا كانت لديك أي أسئلة، أو استفسارات حول سياسة الخصوصية هذه، أو إذا كنت ترغب في إدارة بياناتك، فلا تتردد في التواصل معنا عبر البريد الإلكتروني الرسمي لخدمة العملاء والدعم:
-                    </p>
-                    <div class="inline-flex items-center space-x-2 space-x-reverse bg-[#0D0D1A] px-4 py-3 rounded-lg border border-gray-700">
-                        <a href="mailto:support.abqario@gmail.com" class="text-indigo-400 font-bold hover:text-indigo-300 transition-colors text-lg" dir="ltr">
-                            support.abqario@gmail.com
-                        </a>
-                    </div>
+                    <h2 class="text-xl font-bold mb-3 text-red-400">2. حذف البيانات</h2>
+                    <p class="text-gray-400">يمكنك حذف حسابك وبياناتك فوراً عبر زر "حذف حسابي" في الملف الشخصي، أو مراسلتنا على البريد الموضح بالأسفل.</p>
                 </section>
             </div>
         </div>
+
+        <div class="bg-[#13132A] rounded-3xl p-8 md:p-12 shadow-2xl border border-gray-800 en-section">
+            <div class="text-center mb-10 border-b border-gray-800 pb-8">
+                <h1 class="text-3xl font-extrabold text-white mb-2 text-indigo-400">Privacy Policy</h1>
+                <p class="text-gray-400">Abqario Application</p>
+                <p class="text-xs text-gray-500 mt-2">Last updated: 2024-05-20</p>
+            </div>
+
+            <div class="space-y-6 text-gray-400">
+                <section>
+                    <h2 class="text-xl font-bold text-white mb-3">1. Information Collection</h2>
+                    <p>We use <strong>Huawei Mobile Services (HMS Core)</strong> and Google services for authentication and data storage. Collected data includes your name, email address, and profile picture to provide leaderboards and cloud progress features.</p>
+                </section>
+
+                <section>
+                    <h2 class="text-xl font-bold text-white mb-3">2. Data Deletion (User Rights)</h2>
+                    <p>In compliance with Google Play and Huawei AppGallery policies, we provide a <strong>"Delete Account"</strong> button within the app (Profile Settings). Clicking this will permanently wipe your data from our servers. You can also request deletion via email.</p>
+                </section>
+
+                <section>
+                    <h2 class="text-xl font-bold text-white mb-3">3. Contact Us</h2>
+                    <p>For any privacy concerns, contact us at:<br>
+                    <span class="text-indigo-400 font-bold">support.abqario@gmail.com</span></p>
+                </section>
+            </div>
+        </div>
+
     </div>
 </body>
 </html>
